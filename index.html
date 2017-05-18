@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>30 on 30 Cafe</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles/styles.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+
+  <section class="header">
+    <img src="img/logo.jpg" alt="30 on 30 Logo">
+  </section>
+
+  <div class="wrapper">
+
+    <section class="menu">
+      <h1>Menu</h1>
+      <ul>
+        <h2>Hot Drinks</h2>
+        <li>Latte</li>
+        <li>Hot cocoa</li>
+        <h2>Cold Drinks</h2>
+        <li>Iced coffee</li>
+        <li>Blended frappe</li>
+        <li>Old fashioned root beer</li>
+        <li>Horchada</li>
+        <h2>Treats</h2>
+        <li>Blueberry scones</li>
+        <li>Chocolate chip bars</li>
+      </ul>
+    </section>
+
+    <section class="place-order">
+      <h1>Place your order</h1>
+      <form>
+        <label>
+          <input type="text" id="name" placeholder="Name" required="required" minlength="2"/>
+          <svg class="arrow" viewbox="0 0 20 20">
+            <path d="M0 0 L10 10 L0 20"></path>
+          </svg>
+          <svg class="line" viewbox="0 0 40 2" preserveAspectRatio="none">
+            <path d="M0 1 L40 1"></path>
+            <path class="focus" d="M0 1 L40 1"></path>
+          </svg>
+        </label>
+        <label>
+          <input type="text" id="drink" placeholder="Drink"/>
+          <svg class="arrow" viewbox="0 0 20 20">
+            <path d="M0 0 L10 10 L0 20"></path>
+          </svg>
+          <svg class="line" viewbox="0 0 40 2" preserveAspectRatio="none">
+            <path d="M0 1 L40 1"></path>
+            <path class="focus" d="M0 1 L40 1"></path>
+          </svg>
+        </label>
+        <label>
+          <input type="text" id="treat" placeholder="Treat"/>
+          <svg class="arrow" viewbox="0 0 20 20">
+            <path d="M0 0 L10 10 L0 20"></path>
+          </svg>
+          <svg class="line" viewbox="0 0 40 2" preserveAspectRatio="none">
+            <path d="M0 1 L40 1"></path>
+            <path class="focus" d="M0 1 L40 1"></path>
+          </svg>
+        </label>
+        <div class="btn" id="add-order">Order</div>
+      </form>
+    </section>
+
+    <section class="orders">
+      <h1>Orders</h1>
+      <ul id="orders"></ul>
+    </section>
+
+  </div>
+
+  <div class="thanks">
+    <div class="border">
+      <h1>Thank You!</h1>
+      <p>Your order will be delivered shortly.</p>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="scripts/script.js"></script>
+
+  </script>
+</body>
+</html>
